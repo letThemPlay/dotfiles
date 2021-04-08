@@ -218,4 +218,21 @@ bar {
     }
 }
 
+smart_gaps on
+
+default_border none
+
+for_window [class=".*"] border pixel 0
+gaps {
+    inner 10
+    outer 5
+}
+
+#
+# Opacity for inactive window using swayfader
+# github.com/jake-is-a-legend/swayfader
+#
+
+exec_always python3 ~/.config/sway/swayfader.py
+
 include /etc/sway/config.d/*
