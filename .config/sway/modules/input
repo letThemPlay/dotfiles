@@ -1,0 +1,11 @@
+### Input configuration
+
+input * {
+    xkb_layout "gb"
+}
+
+input "1739:52552:SYNA1D31:00_06CB:CD48_Touchpad" {
+    tap enabled
+    middle_emulation enabled
+}
+
