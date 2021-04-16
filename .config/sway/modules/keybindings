@@ -3,6 +3,7 @@
     # Variables
     set $menu ~/.config/sway/scripts/appmenu
     set $term alacritty
+    set $snippet grimshot copy area
 
     # Start a terminal
     bindsym $mod+Return exec $term
@@ -15,6 +16,9 @@
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    # Start screen snippet
+    bindsym $mod+Shift+s exec $snippet
 
     # Workspaces
     bindsym $mod+1 workspace number 1
