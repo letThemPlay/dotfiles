@@ -19,7 +19,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Aliases
 alias ls='ls --color=auto'
 alias ll='ls -l'
-#alias please='doas $(history -p !!)'
+alias please='doas $(fc -ln -1)'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+neofetch
