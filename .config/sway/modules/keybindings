@@ -13,6 +13,9 @@
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    
+    # Open files
+    bindsym $mod+Shift+f exec nautilus -w
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
