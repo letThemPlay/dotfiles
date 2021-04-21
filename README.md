@@ -9,3 +9,4 @@ swayfader sourced from [here](https://github.com/jake-is-a-legend/swayfader)
  - grimshot
  - zsh-autosuggestions
  - zsh-theme-powerlevel10k
+ - brightnessctl
