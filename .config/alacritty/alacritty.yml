@@ -68,6 +68,8 @@ scrolling:
 
 # Font configuration (changes require restart)
 font:
+  normal:
+    family: "MesloLGS NF"
   # Normal (roman) font face
   #normal:
     # Font family

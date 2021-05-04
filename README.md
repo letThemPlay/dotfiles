@@ -15,3 +15,6 @@ swayfader sourced from [here](https://github.com/jake-is-a-legend/swayfader)
 ## Theme
  - Arc-Darker
  - paper-icon-theme-git
+
+## Icons
+ - nerd-fonts-complete

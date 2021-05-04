@@ -2,6 +2,8 @@
 
     # Variables
     set $menu ~/.config/sway/scripts/appmenu
+    set $powermenu ~/.config/sway/scripts/powermenu
+
     set $term alacritty
     set $snippet grimshot copy area
 
@@ -14,6 +16,9 @@
     # Start your launcher
     bindsym $mod+d exec $menu
     
+    # Open power menu
+    bindsym $mod+p exec $powermenu
+
     # Open files
     bindsym $mod+e exec nautilus -w
 
