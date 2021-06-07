@@ -1,1 +1,2 @@
 exec_always mako
+exec sway-alttab

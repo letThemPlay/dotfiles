@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# display a power menu to: shutdown, reboot,
+# lock, logout, and suspend. This script can be
+# executed by clicking on the polybar powermenu module
+# or with a keyboard shortcut
+
+# options to be displayed
+snippet=$(echo -e "\tSnippet" )
+window=$(echo -e "\tWindow")
+screen=$(echo -e "\tScreen")
+
+uptime=$(uptime -p | sed -e 's/up //g')
+
+# options passed into variable
+#options="$snippet\n$reboot\n$lock\n$logout\n$suspend"
+options="$snippet\n$window\n$screen"
+
+chosen="$(echo -e "$options" | rofi -theme ~/.config/rofi/styles/powermenu.rasi -lines 3 -dmenu -p "$uptime")"
+
+case $chosen in
+    $snippet)
+	grimshot copy area
+        ;;
+    $window)
+        grimshot copy window
+        ;;
+    $screen)
+        grimshot copy output
+        ;;
+esac

@@ -24,13 +24,22 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Aliases
+alias doas='doas '
+alias sudo='sudo '
 alias ls='ls --color=auto -h'
 alias ll='ls -l'
 alias please='doas $(fc -ln -1)'
 alias grep='grep -n --color'
 alias mkdir='mkdir -pv'
 
+#alias pacdiff='DIFFPROG="delta" pacdiff'
+alias pacdiff='SUDO_EDITOR=meld DIFFPROG="sudo -e" pacdiff'
+# SUDO_EDITOR=meld sudo -e /etc/pacman.conf{,.pacnew}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-neofetch
+# Temporary export to clear % shown at beginning of prompt when terminal is reporting incorrect size
+export PROMPT_EOL_MARK=''
+
+#neofetch
